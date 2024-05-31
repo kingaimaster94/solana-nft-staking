@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	/* background-color: #0d0d2e; */
+	font-family: "impact";
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.body-bg {
+	background-color: #0d0d2e;
+	font-family: "impact";
+	background-image: url(../src/components/assets/HomePage.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+.flex-basis {
+	flex-basis: 100% !important;
+}
+
+.basis-half {
+	flex-basis: 50% !important;
+}
+
+.cardTop {
+	top: 110px !important;
+}
+
+.imgTop {
+	top: 4px !important;
+}
+
+.home-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+}
+
+.display-flex{
+	display: flex !important;
+}
+
+@media (max-width:600px) {
+	.home-container {
+		flex-direction: column !important;
+	}
+	.mobile-change{
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 100% !important;
+		z-index: 999;
+	}
+	.mobile-change-2{
+		position: fixed;
+		left: 0;
+		top: 30px;
+		bottom: 0;
+		right: 0;
+		z-index: 1000;
+	}
+}
+
+@media (min-width:640px) {
+	.flex-basis {
+		flex-basis: 24% !important;
+	}
+}
+
+@media (min-width:768px) {
+	.flex-basis {
+		flex-basis: 16% !important;
+	}
+}
+
+iframe {
+	display: none;
+}
+
+.h-full-screen {
+	height: calc(100% - 67.5px);
+}

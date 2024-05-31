@@ -1,0 +1,40 @@
+{
+  "name": "FruitBox",
+  "version": "1.0.0",
+  "description": "Express JS in AWS Lambda deployed to AWS Lambda via SAM",
+  "main": "app.js",
+  "repository": "https://github.com/kukielp/aws-sam-nodejs-express",
+  "author": "Paul Kukiel",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-crypto/client-node": "^3.1.1",
+    "@project-serum/anchor": "^0.25.0",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.66.2",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@vendia/serverless-express": "^4.3.2",
+    "axios": "^1.2.1",
+    "body-parser": "^1.19.0",
+    "bs58": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.4.7",
+    "morgan": "^1.10.0",
+    "process": "^0.11.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4",
+    "winston-loggly-bulk": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-watch": "^0.7.0"
+  },
+  "scripts": {
+    "dev": "nodemon app.local.js",
+    "start": "node app.local.js"
+  }
+}
